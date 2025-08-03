@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dragon City Shop</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f2f2f2; padding: 20px; }
@@ -39,29 +39,45 @@
       <h2>Special Code</h2>
       <p><strong>Fiyat:</strong> 649 TL</p>
       <p><strong>Açıklama:</strong> Özel sürpriz kod! SMS yoluyla gelir.</p>
-
       <form action="https://formsubmit.co/bulutkus17@gmail.com" method="POST">
-        <input type="hidden" name="Ürün" value="Special Code">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="Ürün" value="Special Code" />
         <label>Ad Soyad:</label>
-        <input type="text" name="adsoyad" required>
-
+        <input type="text" name="adsoyad" required />
         <label>Telefon (SMS için):</label>
-        <input type="text" name="telefon" required>
-
+        <input type="text" name="telefon" required />
         <label>Fatura Yöntemi:</label>
         <select name="fatura">
           <option value="Kart ile ödeme">Kart ile ödeme</option>
           <option value="Faturaya yansıt">Faturaya yansıt</option>
         </select>
-
         <label>Ek Not (isteğe bağlı):</label>
         <textarea name="not"></textarea>
-
         <button class="button" type="submit">Satın Al</button>
       </form>
     </div>
 
-    <!-- Daha fazla ürün eklemek için aşağıya yeni .product kutuları koyabilirsin -->
+    <div class="product">
+      <h2>SUPER SPEİCAL CODE</h2>
+      <p><strong>Fiyat:</strong> 949.99 TL</p>
+      <p><strong>Açıklama:</strong> SMS yoluyla kod gelir.</p>
+      <form action="https://formsubmit.co/bulutkus17@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="Ürün" value="SUPER SPEİCAL CODE" />
+        <label>Ad Soyad:</label>
+        <input type="text" name="adsoyad" required />
+        <label>Telefon (SMS için):</label>
+        <input type="text" name="telefon" required />
+        <label>Fatura Yöntemi:</label>
+        <select name="fatura">
+          <option value="Kart ile ödeme">Kart ile ödeme</option>
+          <option value="Faturaya yansıt">Faturaya yansıt</option>
+        </select>
+        <label>Ek Not (isteğe bağlı):</label>
+        <textarea name="not"></textarea>
+        <button class="button" type="submit">Satın Al</button>
+      </form>
+    </div>
 
   </div>
 </body>
