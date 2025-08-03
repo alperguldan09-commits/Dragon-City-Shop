@@ -79,6 +79,28 @@
       </form>
     </div>
 
+    <div class="product">
+      <h2>Random Code</h2>
+      <p><strong>Fiyat:</strong> 170 TL</p>
+      <p><strong>Açıklama:</strong> Rastgele ödüller seni bekliyor.</p>
+      <form action="https://formsubmit.co/bulutkus17@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="Ürün" value="Random Code" />
+        <label>Ad Soyad:</label>
+        <input type="text" name="adsoyad" required />
+        <label>Telefon (SMS için):</label>
+        <input type="text" name="telefon" required />
+        <label>Fatura Yöntemi:</label>
+        <select name="fatura">
+          <option value="Kart ile ödeme">Kart ile ödeme</option>
+          <option value="Faturaya yansıt">Faturaya yansıt</option>
+        </select>
+        <label>Ek Not (isteğe bağlı):</label>
+        <textarea name="not"></textarea>
+        <button class="button" type="submit">Satın Al</button>
+      </form>
+    </div>
+
   </div>
 </body>
 </html>
