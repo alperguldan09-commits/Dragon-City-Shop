@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragon City Shop - Reveal Boxer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f2f2f2; padding: 20px; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { text-align: center; margin-bottom: 30px; }
+
+    .product { border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
+    .rainbow-text {
+      font-size: 24px;
+      font-weight: bold;
+      background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: rainbow 6s ease-in-out infinite;
+    }
+    @keyframes rainbow {
+      0%{ background-position:0% 50%; }
+      50%{ background-position:100% 50%; }
+      100%{ background-position:0% 50%; }
+    }
+    .price { color: green; font-weight: bold; font-size: 18px; }
+    .description { font-size: 16px; margin: 10px 0; }
+    .limited {
+      display: inline-block;
+      font-weight: bold;
+      animation: shine 2s infinite;
+      color: #555;
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    @keyframes shine {
+      0%,100% { color: #555; text-shadow: 0 0 5px rgba(0,0,0,0.3); }
+      50% { color: #000; text-shadow: 0 0 15px rgba(0,0,0,0.8); }
+    }
+    .button { background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; }
+    form { margin-top: 15px; }
+    label { display: block; margin-bottom: 5px; }
+    input, select, textarea { width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dragon City Shop</h1>
+
+    <div class="product">
+      <h2 class="rainbow-text">REVEAL BOXER</h2>
+      <p><strong>Fiyat:</strong> <span class="price">1.400 TL</span></p>
+      <p class="description"><strong>Açıklama:</strong> <span class="limited">LİMİTED</span></p>
+      <form action="https://formsubmit.co/bulutkus17@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="Ürün" value="REVEAL BOXER" />
+        <label>Ad Soyad:</label><input type="text" name="adsoyad" required />
+        <label>Telefon (SMS için):</label><input type="text" name="telefon" required />
+        <label>Fatura Yöntemi:</label>
+        <select name="fatura">
+          <option value="Kart ile ödeme">Kart ile ödeme</option>
+          <option value="Faturaya yansıt">Faturaya yansıt</option>
+        </select>
+        <label>Ek Not (isteğe bağlı):</label><textarea name="not"></textarea>
+        <button class="button" type="submit">Satın Al</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
